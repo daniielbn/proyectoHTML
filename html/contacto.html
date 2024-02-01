@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../img/favicon-96x96.png" type="96x96">
+    <title>Contacto</title>
+</head>
+<body>
+    <div id="head-content">
+        <h1>La web de las artes</h1>
+        <h2 id="contacto">SECCIÓN: Contacto</h2>
+        <div class="index">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="cine.html">Cine</a></li>
+                <li><a href="literatura.html">Géneros literarios</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </div>
+    </div>  
+
+    <hr>
+
+    <div id="main-content">
+        <div class="form">
+            <form action="/formulario.php" name="formulario" method="post" enctype = “multipart/form-data”>
+                <fieldset>
+                <legend>Datos personales</legend>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" autocomplete="false" placeholder="Introduce tu nombre..." required title="Completa este campo">
+                    </p>
+                    <p>
+                        Apellidos:
+                        <input type="text" name="Apellidos" autocomplete="false" placeholder="Introduce tu apellido..." required title="Completa este campo">
+                    </p>
+                    <p>
+                        Email:
+                        <input type="email" name="Email" autocomplete="false" placeholder="usuario@email.com" required pattern="[a-z]+@[a-z]+\.[a-z]{2,3}">
+                    </p>
+
+                    <p>
+                        Fecha de nacimiento:
+                        <input type="date" name="Fecha" autocomplete="false" placeholder="dd/mm/aaaa" step="1" required title="El valor debe ser igual o inferior a 100, y superior a 0.">
+                    </p>
+
+                    <p>
+                        Edad:
+                        <input type="number" name="Edad" min="0" max="100" step="1" requierd>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="Sexo" value="H" checked required> Hombre
+                        <input type="radio" name="Sexo" value="M" required> Mujer
+                    </p>
+
+                    <p>
+                        <label for="pais">País:</label>
+                        <select name="pais" id="pais" required>
+                            <option value="" selected="seelected">- selecciona -</option>
+                            <option value="españa">España</option>
+                            <option value="francia">Francia</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="italia">italia   </option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros datos</legend>
+                    <p>
+                        Mensaje:
+                        <textarea name="mensaje"cols="30" rows="10" spellcheck="true" placeholder="Introduce tu mensaje..."></textarea>
+                    </p>
+
+                    <p>
+                        Adjunta una foto...
+                        <input type="file" name="adjunto" accept=".png, .jpeg, .jpg">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" name="condiciones" required> He leído las condiciones...
+                </p>
+
+                <p>
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" id="form" value="Enviar">
+                </p>
+                
+            </form>
+        </div>
+
+        <div class="map">
+            <h1>Centro de referencia</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7794477103666!2d-16.2832455!3d28.4560642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1706550594641!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="footer">
+        <a href="#contacto">Inicio</a>
+    </div>
+</body>
+</html>
